@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кумир|Онлайн</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <canvas id="canvas" style="border: 3px solid black;"></canvas>
+            </td>
+            <td>
+                <textarea id="text" placeholder="..." style="width: 300px; height: 200px"></textarea>
+                <button onclick="redraw()">[>>>]</button>
+            </td>
+        </tr>
+    </table>
+    <input type="range" onchange="redraw()" id="ratio" min="5" max="20" step="5" value="1">
+    <label for="ratio">Масштаб</label>
+    <input type="checkbox" onchange="redraw()" id="minRat">
+    <label for="ratio">1?</label>
+</body>
+</html>
+
+<script src="script.js"></script>
